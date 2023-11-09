@@ -1,194 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
-
-
-
 *{
-      margin: 0;
-      padding: 0;
+     padding: 0;
+     margin: o;
+     box-sizing: border-box;
 }
-
-.sidebar{
-     background-color: rgb(223, 220, 220);
-     width: 434px;
-     font-family: 'Fira Sans', sans-serif;
-     height: 120vh;
-
- }
-
-.sidebar  nav {
-    padding: 45px;
+body{
+      width: 100%;
+      height: 100%;
+      color: white;
+      background: black;
+      font-family: 'Helventice Neue',Arial, Helvetica, sans-serif;
 }
-
-.sidebar  nav  li {
-    list-style-type: none;
-    font - size: 30px;
-    padding:  33px  0;
+.container::before{
+    content:  "";
+    background: url(netflix-image.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
 }
-.sidebar nav li  a{
-    text-decoration: none;
-    color: black;
-    
+.container .navbar{
+        height:100px;
+        display: flex;
 }
- 
-.main{
-     background-color:
-     width:  90vw;
+.container .navbar .left{
+        height: 100%;
+        display: flex;
+        float: left;
 }
-
-.container{
-      display: flex;
+.container .navbar .left img{
+    height: 50px;
+    position:absolute ;
+    left: 35px;
 }
-
-.infocontainer{
-    background-color: ;
-    height: 78vh;
-    width: 80vw;
-    margin: 144px  auto; 
+.container .navbar .right{
     display: flex;
-    justify-content: space-around;
+    height: 100px;
+    float: right;
+    position:absolute;
+    right: 50px;
 }
-
-.divinfo{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'Source Code Pro', monospace;
-}
-.hello{
-    font-size: 45px;
-}
-.name{
-    font-size: 50px;
-    font-weight: bold;
-    font-family: 'Fira Sans', sans-serif;
-}
-.about{
-    font-size: 30px;
-    padding: 15px;
-}
-.moreabout{
-   padding: 5pxs;
-   font-size: 15px;
-   font-family: cursive;
-}
-
-.btn{
-    padding: 9px  14px;
-    border-radius: 22px ;
-    color: white ;
-    background-color: dodgerblue;
-    font-weight: bold;
-    font-size: 15px;
-    margin: 0  3 px;
-    cursor: pointer;
-}
-.btn:hover{
-    background-color: white;
-    color: dodgerblue;
-}
-.btn-sm{
-    font-size: 10px;
-    padding: 8px 13px;
-    margin: 10px 0;
-}
-.divpic img{
-    width: 370px ;
-    padding: 50px;
-}
-
- .contactform{
-    font-family: 'Fira Sans', sans-serif;
-    padding:0 34px;
-    padding-top: 144px;
- }
-
- .contactform h1{
-    font-family: 'Source Code Pro', monospace;
-    text-align: center;
- }
-
- .contactform form div{
-    padding: 20px  0;
-    display: flex;
-     flex-direction: column;
- }
- .contactform form div input{
-    width: 25vw;
-        border-radius: 5px;
-        margin: 6px 0 0 0;
-        padding: 3px;
-    
- }
- #emailHelp{
-    font - size: 11px;
-    color: midnightblue;
-    margin: 0 5px;
- }
-
-  #form-check{
-    flex-direction: row;
-  }
-
- #form-check input{
-    width: 24px;
-       margin: 3px  0;
- }
- .blogitem{
-    margin: 20px;
-    font-family: 'Fira Sans', sans-serif;
- }
-
-  h1{
-    font-family: 'Fira Sans', sans-serif;
-    margin: 23px;
- }
- p{
-    font-family: 'Source Code Pro', monospace;
- }
-
- .intro h2{
-    font-family: 'Fira Sans', sans-serif;
-    margin: 12px;
- }
-
- .intro p{
-    font-family: 'Source Code Pro', monospace;
-    margin: 12px;
- }
-
- .skilcontainer{
-    padding: 12px;
- }
- .skillitem{
-    display: flex;
+.container .navbar .right .language{
+    margin: auto;
     align-items: center;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 900;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.container .navbar .right .language option{
+    background-color: grey;
+}
+.container .navbar .right button{
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 400;
+      padding: 7px 17px;
+      background: #ef0606dd;
+      cursor: pointer;
+      outline: none;
+      border-radius: 4px;
+      border: none;
+}
+.container .navbar .right button a{
+      text-decoration: none;
+      color: white;
+}
+ .container .title{
+     padding: 70px 45px;
  }
- .skill{
-    width: 265px;
-    height: 6px;
-    background-color: red;
-    border: 2px solid black;
+ .container .title .content{
+      width: 950px;
+      margin: auto;
+      padding: 75px 0;
+      text-align: center;
  }
- .hundred{
-    width: 265px;
-    background-color: blueviolet;
+ .container .title .content h1{
+      width: 650px;
+      margin: auto;
+      font-size: 3.1rem;
+      text-align: center;
  }
- .fifty{
-    width: 125px;
-    background-color:aqua;
+ .container .title .content h2{
+    width: 650px;
+      margin: auto;
+      font-size: 1.6rem;
+      text-align: center;
  }
- .t5{
-    width: 75px;
-    background-color: yellow;
+ .container .title .content form h3{
+      font-size: 1rem;
+      margin: 18px 0;
+      text-align: center;
  }
-
- @media (max-width:1245px) { */
-   *{
-   /* background-color: red; */
-   }
-   
+ .container .title .content form .email{
+       width: px;
+       margin: auto;
+ }
+ .container .title .content form .email input{
+      height: 60px;
+      width: 450px;
+      margin: auto;
+      padding: 20px;
+      font-size: 20px;
+      outline: none;
+ }
+ .container .title .content form .email button{
+       margin: auto;
+       height: 60px;
+       width: 180px;
+       align-items: center;
+       justify-content: center;
+       font-size: 20px;
+       padding: 7px 17px;
+       background: #e91515;
+       cursor:pointer;
+       outline: none;
+       border-top-right-radius: 2px;
+       border-bottom-left-radius: 2px;
+       border: none;
+       margin-right: 5px;
+ }
+ .container .title .content form .email button:hover{
+    background-color: #e91515;
+ }
+ .container .title .content form .email button a{
+       text-decoration: none;
+       color: white;
  }
  
+
